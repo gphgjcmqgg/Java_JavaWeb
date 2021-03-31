@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        var patt = /e/;
+        var str = "abcd";
+        // alert(patt.test(str)); // 验证是否包含e
+
+        patt = /[abc]/; // 包含a,b,c任意一个字符
+        str = "jjs";
+        alert(patt.test(str));
+
+        patt = /[a-z]/;
+        patt = /[A-Z]/;
+        patt = /[0-9]/;
+        patt = /\w/; // 包含字母数字下划线
+
+        patt = /a+/; // 至少包含一个a
+
+        patt = /a*/; // 至少包含零个或者多个a
+
+        patt = /a?/; // 至少包含零个或者一个a
+
+        patt = /a{3}/; // 包含连续3个a
+
+        patt = /a{3,5}/; // 至少包含连续3个到5个a
+
+        patt = /a{3,}/; // 至少包含
+
+        patt = /^a{5,12}$/  // 从头到尾检查a 连续5-12个
+        str = "aaaaaaaaaaaa";
+        alert(patt.test(str));    </script>
+</head>
+<body>
+
+</body>
+</html>
